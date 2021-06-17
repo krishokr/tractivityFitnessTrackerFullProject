@@ -1,0 +1,117 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.half {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.left { 
+  left: 0;
+  background-color: #FFF;
+}
+.right {
+  
+  right: 0;
+  background-color: #333333;
+}
+#right-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  width: 30vw;
+}
+
+a, a:hover, a:visited, a:active {
+  color: #FFF;
+  text-decoration: none;
+}
+
+#welcomeToTractivity {
+  font-size: 2.8vw;
+  font-weight: bolder;
+  color: #53E0CD;
+}
+#splashP {
+  font-size: 2vw;
+}
+.center {
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#workoutImage {
+  width: 40vw;
+}
+a {
+  flex-direction: column;
+  height: 23%;
+  font-size: 1.9vw;
+}
+#google {
+  width: 30vw;
+}
+
+
+@media (max-width: 768px) {
+  
+  body {
+    background-color: #333333;
+  }
+  #column {
+    display: flex;   
+    flex-direction: column;
+    height: 100%;
+  }
+  .half {
+    align-self: center;
+    position: static;
+    width: 60%;
+    
+  }
+  .center {
+    align-items: center;
+    position: static;
+    transform: none;
+    
+  }
+  #splashP {
+    padding: 5%;
+    font-size: 2.5vw;
+    margin: 0px;
+  }
+  #right-container {
+    
+    width: 5vw;
+    align-items: center;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  #tractivity, label,#welcomeToTractivity, #google {
+    width: 40vw;
+    padding-left: 43vw;
+  }
+  #welcomeToTractivity {
+    padding-top: 8vw;
+    padding-bottom: 6vw;
+    font-size: 3.9vw;
+  }
+  #workoutImage {
+    padding-top: 8%;
+  }
+  .left {
+    flex-wrap: wrap;
+  }
+  .right {
+    align-items: center;
+    
+    
+  }
+  
+}
